@@ -1,0 +1,22 @@
+{
+  "name": "express-backbone",
+  "version": "1.0.0",
+  "description": "learn backbone",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/websjs/express-backbone.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/websjs/express-backbone/issues"
+  },
+  "homepage": "https://github.com/websjs/express-backbone#readme",
+  "dependencies": {
+    "express": "^4.16.3"
+  }
+}
