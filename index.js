@@ -7,34 +7,43 @@ app.get('/',function(req, res){
     let data = {
         title : '首页',
         message : '路由',
-        nav:[
-            {
-                text: '首页',
-                href:'/home'
-            },
-            {
-                text:'新闻',
-                href:'/new'
-            },
-            {
-                text:'关于',
-                href:'/about'
-            }
-        ]
+
     }
     res.render('index', data )
 });
 app.get('/home', function (req, res) {
-
+    res.render('home')
+})
+app.post('/home', function (req, res) {
     let data = {
-        content : 'home'
+        'title':'home',
+        'content': 'welcome home'
     }
-    res.render('home', data )
+    res.send(data)
+})
+app.get('/about', function (req, res) {
+    res.render('about')
+})
+app.post('/about', function (req, res) {
+    let data = {
+        'title': 'about',
+        'content': 'about us'
+    }
+    res.send(data)
+})
+app.get('/new', function (req, res) {
+    res.render('new')
+})
+app.post('/new', function (req, res) {
+    let data = {
+        'title': 'new',
+        'content': 'today new'
+    }
+    res.send(data)
 })
 var server = app.listen(6789, function () {
     var host = server.address().address;
     var port = server.address().port;
-
 
     console.log('Example app listen at https://%s:%s', host, port)
 });

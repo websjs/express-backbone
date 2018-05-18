@@ -4,9 +4,8 @@ html
     body
         h1= message
         nav
-            -for(var i = 0; i < nav.length; i ++)
-                a(class="item", href=nav[i].href)=nav[i].text
-        a(href="#home")='home'
-        a(href="#new")='new'
-        a(href="#about")='about'
+            a(href="#home")='home'
+            a(href="#new")='new'
+            a(href="#about/qqq/p9")='about'
+        section
         script(data-main="/js/index/index.js", src="/js/common/require.min.js")
